@@ -1,0 +1,147 @@
+/* General styles */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #fff8c7;
+  transition: background-color 0.5s ease;
+}
+
+/* Font face definition */
+@font-face {
+  font-family: 美咲ゴシック第2;
+  src: url(misaki_gothic_2nd.ttf) format("opentype"),
+       url(misaki_gothic_2nd.otf) format("opentype"),
+       url(misaki_gothic_2nd.woff2) format("woff2");
+  font-display: block;
+}
+
+/* Header styling */
+header {
+  color: #fff;
+  background-color: #7882fa;
+  padding: 20px;
+  text-align: center;
+  font-family: 美咲ゴシック第2;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1, h2, li {
+  font-family: 美咲ゴシック第2;
+}
+
+li {
+  font-size: 21px;
+  list-style: none;
+}
+
+/* Overview sections */
+.overview {
+  color: #ff0000;
+  margin-left: 100px;
+}
+
+.overview2 {
+  color: #c8ff00;
+  margin-left: 20px; /* Adjust left margin */
+  margin-right: 20px; /* Add right margin */
+}
+
+.p {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.button {
+  margin: 10px;
+  border-radius: 5px;
+  padding: 1em 1em;
+  text-decoration: none;
+  font-family: 美咲ゴシック第2;
+}
+
+/* Popup (Slider) styling */
+.color-slider {
+  display: none; /* Initially hidden */
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 150px; /* Adjusted slider width */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.popup-content {
+  position: relative;
+  padding-top: 30px; /* Add space for the close button */
+}
+
+.close-slider {
+  position: absolute;
+  top: 5px; /* Distance from the top */
+  right: 5px; /* Distance from the right */
+  font-size: 18px;
+  cursor: pointer;
+  color: #888;
+}
+
+.close-slider:hover {
+  color: #000;
+}
+
+.color-slider div {
+  display: flex;
+  flex-direction: column; /* Align labels above sliders */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.color-slider label {
+  color: #000;
+  font-family: 美咲ゴシック第2;
+  margin-bottom: 5px;
+}
+
+.color-slider input[type="range"] {
+  width: 100%; /* Ensure sliders are the same size */
+}
+
+/* Move buttons styling */
+.move-buttons {
+  display: flex;
+  justify-content: space-between; /* Space out buttons */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.move-buttons button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  flex: 1; /* Ensure buttons are evenly spaced */
+}
+
+.move-buttons img {
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+}
+
+.move-buttons img:hover {
+  filter: hue-rotate(180deg);
+}
+
+/* Control text wrapping */
+.overview2 p {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
