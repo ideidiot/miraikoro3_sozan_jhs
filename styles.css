@@ -21,7 +21,7 @@ body {
 /* Header styling */
 header {
   color: #fff;
-  background-color: #00ff00;
+  background-color: #fff8c7;
   padding: 20px;
   text-align: center;
   font-family: 美咲ゴシック第2;
@@ -48,7 +48,7 @@ li {
 }
 
 .overview2 {
-  color: #32f8c7;
+  color: #00ff00;
   margin-left: 20px; /* Adjust left margin */
   margin-right: 20px; /* Add right margin */
 }
