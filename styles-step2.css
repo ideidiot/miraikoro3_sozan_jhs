@@ -2,6 +2,14 @@ body {
     background-color: #fff8c7;
     transition: background-color 0.5s ease;
   }
+
+  @font-face {
+    font-family: 美咲ゴシック第2;
+    src: url(misaki_gothic_2nd.ttf) format("opentype"),
+         url(misaki_gothic_2nd.otf) format("opentype"),
+         url(misaki_gothic_2nd.woff2) format("woff2");
+    font-display: block;
+  }
   
   header {
     color: #fff;
