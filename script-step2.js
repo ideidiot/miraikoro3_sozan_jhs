@@ -13,7 +13,7 @@ const moveButtons = {
   bottomRight: document.querySelector(".move-bottom-right"),
 };
 
-// Open the slider
+// Open th
 openSliderButton.addEventListener("click", () => {
   colorSlider.style.display = "block";
   const currentColor = getComputedStyle(overview2).color;
