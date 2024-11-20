@@ -16,7 +16,6 @@ const moveButtons = {
 // Open the slider
 openSliderButton.addEventListener("click", () => {
   colorSlider.style.display = "block";
-  // Set the slider values to the current color
   const currentColor = getComputedStyle(overview2).color;
   const rgb = currentColor.match(/\d+/g).map(Number);
   redRange.value = rgb[0];
@@ -29,12 +28,9 @@ closeSliderButton.addEventListener("click", () => {
   colorSlider.style.display = "none";
 });
 
-// Update the text color based on slider values
+// Update text color
 const updateColor = () => {
-  const r = redRange.value;
-  const g = greenRange.value;
-  const b = blueRange.value;
-  overview2.style.color = `rgb(${r}, ${g}, ${b})`;
+  overview2.style.color = `rgb(${redRange.value}, ${greenRange.value}, ${blueRange.value})`;
 };
 
 redRange.addEventListener("input", updateColor);
@@ -45,27 +41,19 @@ blueRange.addEventListener("input", updateColor);
 moveButtons.topLeft.addEventListener("click", () => {
   colorSlider.style.top = "20px";
   colorSlider.style.left = "20px";
-  colorSlider.style.right = "auto";
-  colorSlider.style.bottom = "auto";
 });
 
 moveButtons.topRight.addEventListener("click", () => {
   colorSlider.style.top = "20px";
-  colorSlider.style.left = "auto";
   colorSlider.style.right = "20px";
-  colorSlider.style.bottom = "auto";
 });
 
 moveButtons.bottomLeft.addEventListener("click", () => {
-  colorSlider.style.top = "auto";
-  colorSlider.style.left = "20px";
-  colorSlider.style.right = "auto";
   colorSlider.style.bottom = "20px";
+  colorSlider.style.left = "20px";
 });
 
 moveButtons.bottomRight.addEventListener("click", () => {
-  colorSlider.style.top = "auto";
-  colorSlider.style.left = "auto";
-  colorSlider.style.right = "20px";
   colorSlider.style.bottom = "20px";
+  colorSlider.style.right = "20px";
 });

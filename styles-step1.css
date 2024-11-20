@@ -1,0 +1,24 @@
+/* General styles for step1 */
+body {
+  background-color: #fff8c7;
+  transition: background-color 0.5s ease;
+}
+
+header {
+  color: #fff;
+  background-color: #7882fa;
+  padding: 20px;
+  text-align: center;
+  font-family: 美咲ゴシック第2;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.overview {
+  color: #ff0000;
+  margin-left: 100px;
+  font-family: 美咲ゴシック第2;
+}
