@@ -1,0 +1,176 @@
+/* ポップアップ全体 */
+.Vijust {
+    display: none;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 200px;
+    height: 300px; /* 高さを設定 */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .sampleText {
+    color: #c8ff00;
+    background-color: #fff8c7;
+    font-size: 20px;
+  }
+  
+  /* ポップアップ内 */
+  .popupContent {
+    position: relative;
+    margin-top: 25px; /* 閉じるボタン用のスペース */
+    padding-top: 25px;
+    height: 250px; /* コンテンツエリアの高さ調整 */
+    overflow-y: auto; /* コンテンツが多い場合にスクロール */
+  }
+  
+  /* ポップアップのボタン */
+  .popupButtons {
+    text-align: center;
+    padding: 0; /* 余白を調整 */
+  }
+  
+  .popupButtons p {
+    margin: 0; /* 各ボタンの縦の余白をなくす */
+    padding: 5px 0; /* 縦の余白を少し減らす */
+  }
+  
+  .popupButtons button {
+    width: 100%; /* ボタンを横幅いっぱいに */
+    padding: 8px; /* ボタンの内側の余白 */
+    font-size: 16px; /* ボタンの文字サイズ */
+    margin: 2px 0; /* ボタン間の余白 */
+    transform: translateY(-50%); /* 縦方向に中央揃え */
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }
+  
+  .popupButtons button:hover {
+    background-color: #ddd;
+  }
+  
+  /* 色調整スライダー */
+  .colorSlider {
+    margin-top: 20px;
+  }
+  
+  .colorSlider div {
+    margin-bottom: 10px;
+  }
+  
+  .colorSlider label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .colorSlider input[type="range"] {
+    width: 90%;
+    text-align: center;
+  }
+  
+  /* 戻るボタン */
+  .backButton {
+    display: none; /* 初期状態で非表示 */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%; /* 丸い形にする */
+    background-color: #f0f0f0;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  
+  .backButton:hover {
+    color: #000;
+    background-color: #ddd; /* 背景色を追加して視認性を向上 */
+  }
+  
+  /* 閉じるボタン */
+  .closeVijust {
+    position: absolute;
+    padding: 5px;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: #888;
+  }
+  
+  .closeVijust:hover {
+    color: #000;
+    background-color: #ddd; /* 背景色を追加して視認性を向上 */
+  }
+  
+  /* 方向ボタン系 */
+  .imageGroup {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .imageGroup img {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .imageGroup img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }
+  
+  .textOnSlider {
+    text-align: center;
+  }
+  
+  /* ポップアップの初期位置 */
+  .Vijust {
+    display: none;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 200px;
+    height: 300px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  /* ボタンのスタイル（移動用） */
+  .moveVijust {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .moveVijust img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .moveVijust img:hover {
+    transform: scale(1.1);
+  }
+  

@@ -1,32 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vijust</title>
+    <link rel="stylesheet" href="styles-step1.css" />
+  </head>
+  <body>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>未来航路step1</title>
-  <link rel="stylesheet" href="styles-step1.css">
-  <link rel="preload" as="font" href="misaki_gothic_2nd.ttf">
-  <link rel="preload" as="font" href="misaki_gothic_2nd.otf">
-  <link rel="preload" as="font" href="misaki_gothic_2nd.woff2">
-</head>
+    <h1>Vijust</h1>
+    <p class="subtitle">~ Visual + Adjust ~</p>
+    <p>色覚多様性に対応したウェブサイトに使われる色を操作するシステムの開発</p>
 
-<body>
-  <header>
-    <P><h1>Step 1</h1></P>
-    <p>
-      <a href="step2.html">step2</a>
-    </p>
-  </header>
-  <div class="overview">
-  <h2>Overview</h2>
-  <li>サイトに使われている色をを変更するシステム</li>
-  <p></p>
-  <li>ポップアップを表示する</li>
-  <p></p>
-  <li>ポップアップのスライダーで文字の色を変更できる。</li>
-  <p></p>
-  </div>
-</body>
+      <!-- Open Popup Button -->
+    <button class="openVijust">Vijust</button>
 
+    <div class="sampleText" id="sampleText">
+      <h4>
+        Hello everyone! This site is my first project in my life. This feature
+        allows you to change the color of hard-to-see text on websites. <br />It
+        is still in the process of creation, so it might be in a state of
+        mistake, but be charming plz :p
+      </h4>
+    </div>
+    <div>
+      
+    <!-- Popup -->
+    <div class="Vijust" id="Vijust">
+      <img class="closeVijust" id="closeVijust" src="x-lg.svg" />
+      <img
+        class="backButton"
+        id="backButton"
+        src="arrow-left-short.svg"
+        alt="Back"
+      />
+      <div class="popupContent">
+        <div class="popupButtons">
+          <p><button id="addOutline">縁取り</button></p>
+          <!--<p><button>フィルター</button></p>
+          <p><button>フィルター</button></p>-->
+          <p><button id="customColor">CUSTOM▶</button></p>
+        </div>
+      </div>
+      <!-- ボタンをクリックしてポップアップを移動 -->
+      <div class="imageGroup">
+        <button class="moveVijust move-top-left">
+          <img src="arrow-up-left-square.svg" alt="Top Left" />
+        </button>
+        <button class="moveVijust move-top-right">
+          <img src="arrow-up-right-square.svg" alt="Top Right" />
+        </button>
+        <button class="moveVijust move-bottom-left">
+          <img src="arrow-down-left-square.svg" alt="Bottom Left" />
+        </button>
+        <button class="moveVijust move-bottom-right">
+          <img src="arrow-down-right-square.svg" alt="Bottom Right" />
+        </button>
+      </div>
+    </div>
+
+    <script src="script-step1.js"></script>
+  </body>
 </html>
